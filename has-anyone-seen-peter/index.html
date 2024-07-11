@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title> Has anyone seen Peter </title>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        const startDate = new Date('June 19, 2024');
+        const currentDate = new Date();
+        const timeDifference = currentDate - startDate;
+        const daysSince = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        document.getElementById('days').textContent = daysSince.toString();
+      });
+
+    </script>
+  </head>
+  <body>
+    <center>
+    <h1 style="padding-top: 100px; font-family: cambria">
+      Has anyone seen Peter Wildeford?
+    </h1>
+    <h2 style="padding-top: 100px; font-family: cambria">
+      <span style="font-size: 1.3em !important">No</span>, not for the last <span id="days">22</span> days.
+    </h2>
+    </center>
+  </body>
+</html
+
